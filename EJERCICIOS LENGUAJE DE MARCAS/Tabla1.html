@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .columna1 {
+            width: 80px;
+            text-align: center;
+
+        }
+
+        .columna2 {
+            width: 200px;
+        }
+
+        .columna3{
+            width: 200px;
+        }
+        .columna4{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tabla">
+        <tr>
+            <td class="columna1"><b>Fila1</b></td>
+            <td class="columna2">F1-C1</td>
+            <td rowspan="2">Fusión F1-C2 y F2-C2</td>
+            <td class="columna4" rowspan="3">Fusión F1-C3,F2-C3 y F3-C3</td>
+        </tr>
+        <tr>
+            <td class="columna1"><b>Fila2</b></td>
+            <td class="columna3" rowspan="2">Fusión F2-C1 y F3-C1</td>
+        </tr>
+        <tr>
+            <td class="columna1"><b>Fila3</b></td>
+            <td class="columna3" rowspan="2">Fusión F4-C2 y F4-C2</td>
+        </tr>
+        <tr>
+            <td class="columna1"><b>Fila4</b></td>
+            <td>F4-C1</td>
+            <td class="columna4">F4-C3</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
